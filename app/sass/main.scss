@@ -27,7 +27,7 @@ body {
 	margin: 0;
 }
 
-.h2, .h3 {
+.h2, .h3, .h4 {
 	font-weight: 900;
 	text-transform: uppercase;
 	font-size: 24px;
@@ -36,9 +36,14 @@ body {
 	margin: 0;
 }
 
-.h3 {
+.h3, .h4 {
 	font-weight: 800;
 	font-size: 18px;
+}
+
+.h4 {
+	font-weight: bold;
+	text-align: left;
 }
 
 hr.accent {
@@ -261,6 +266,31 @@ hr.accent {
 				@extend .zakaz-title;
 				font-size: 24px;	
 				margin-bottom: 50px;			
+			}
+		}
+	}
+
+	&-footer {
+		padding: 80px 0;
+		.h4 {
+			margin-bottom: 30px;
+		}
+
+		.footer-gallery {
+			line-height: 0;
+			font-size: 0;
+			// display: flex;
+			// flex-wrap: wrap;
+
+			img {
+				margin: 0 8px 11px 0;
+				width: 84px;
+
+				&:nth-child(4n) {
+					margin-right: 0;
+				}
+
+//				display: block;				
 			}
 		}
 	}
@@ -545,5 +575,85 @@ hr.accent {
 	}
 }
 
+.list {
+	padding: 0;
+	list-style: none;
+	li {
+		position: relative;
+		margin-bottom: 15px;
+		.fa {
+			position: absolute;
+			top: 0;
+			transform: translateX(calc(-100% - 7px));
+		}	
+	}
+
+	&-contacts {
+		li {
+			font-size: 14px;
+			padding-left: 21px;
+			.fa {
+				top: 7px;
+				width: 15px;
+			}
+		}
+	}
+
+	&-zakazat, &-socials {
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: bold;
+			
+		li {
+			span {
+				border-bottom: 1px solid #fff;
+			}
+		}
+	}
+
+	&-zakazat {
+		li {
+			padding-left: 27px;			
+			a {
+				color: #ffffff;
+			}
+
+			&:before {
+				position: absolute;
+				top: 4px;
+				left: 0px;
+				content: "\f105";
+				font-family: fontawesome;
+				padding-left: 2px;
+				@include circle(20px);
+				color: rgba(#fff, 0.349);
+			}
+
+			&:hover{
+				a {
+					color: $accent;
+				}
+
+				&:before {
+					background-color: #94774a;	
+					color: #1a1208;			
+				}
+			}
+
+
+		}		
+	}
+
+	&-socials {
+		li {
+			padding-left: 34px;			
+			.fa {
+				@include circle(27px);
+				background-color: #94774a;				
+				font-size: 16px;
+			}
+		}
+	}
+}
 
 @import "media"; // Всегда в конце

@@ -110,3 +110,11 @@ body textarea:required:valid {
 	font-size: 12px;
 	color: #666666;
 }
+
+@mixin circle($width) {
+	width: $width;
+	height: $width;
+	line-height: $width;	
+	text-align: center;
+	border-radius: 50%;
+}

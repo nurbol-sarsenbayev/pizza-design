@@ -1,3 +1,4 @@
+@import "vars";
 @import "../libs/bootstrap-grid/bootstrap-grid.min";
 @import "../libs/font-awesome/font-awesome.min";
 @import "../libs/owl.carousel/owl.carousel.css";
@@ -11,4 +12,49 @@
          url('../fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'), 
          url('../fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), 
          url('../fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+}
+
+.owl {
+    &-prev, &-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 38px;
+        line-height: 20px;
+        color: #fff;
+
+        &.disabled {
+            opacity: 0.349;
+        }
+
+        .fa {
+            opacity: 0.749;            
+        }
+    }
+
+    &-prev {
+        left: -60px;
+    }
+
+    &-next {
+        right: -60px;
+    }
+
+    &-dots {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    &-dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: lighten($accent, 27%);
+        margin: 0 4px;
+
+        &.active {
+            background-color: $accent;
+        }
+    }
 }

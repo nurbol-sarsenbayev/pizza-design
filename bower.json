@@ -5,8 +5,8 @@
     "Nurbol Sarsenbayev"
   ],
   "install": {
-    "path": "app/libs/", // указывается папка куда bower-installer перемещает файлы 
-    "sources": { // переопределяем значение свойства main bower.json файла пакета 
+    "path": "app/libs/",
+    "sources": {
       "bootstrap-grid": [
         "bower_components/bootstrap-grid/dist/bootstrap-grid.min.css"
       ],
@@ -21,10 +21,10 @@
     "верстка",
     "sass"
   ],
-  "homepage": "https://github.com/nurbol-sarsenbayev/start-template-gulp",
   "dependencies": {
     "jquery": "^3.2.1",
     "bootstrap-grid": "^3.3.6-beta.1",
-    "font-awesome": "fontawesome#^4.7.0"
+    "font-awesome": "fontawesome#^4.7.0",
+    "owl.carousel": "owl-carousel2#^2.2.1"
   }
 }

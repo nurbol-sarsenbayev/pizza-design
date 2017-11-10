@@ -23,9 +23,23 @@ body {
 	font-family: "Isadora";
 	font-weight: bold;
 	font-size: 52px;
-	line-height: 52.71px;
-	color: #ffffff;
-	margin: 0 0 40px 0;
+	line-height: 1;
+	margin: 0;
+}
+
+.h2 {
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 1;
+	text-align: center;
+	margin: 0;
+}
+
+.h3 {
+	@extend .h2;
+	font-weight: 800;
+	font-size: 18px;
 }
 
 .section {
@@ -92,6 +106,10 @@ body {
 			filter: blur(5px);			
 		}
 
+		.h1 {
+			margin-bottom: 40px;			
+		}
+
 		p {
 			margin: 0 20px 40px 0;
 		}
@@ -99,6 +117,36 @@ body {
 		&.section-overlay::before {
 			opacity: 0.3;
 			z-index: 1;
+		}
+	}
+
+	&-pizza {
+		margin-top: -100px;		
+		
+		.container {
+			background-color: #ffffff;
+			padding: 80px 0 55px 0;
+		}
+
+		.h2 {
+			margin-bottom: 42px;
+		}
+
+		.h3 {
+			margin: 30px 0 18px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 24px;
+			margin: 25px 0 0;
+
+			&.small {
+				color: #666666;
+				font-size: 14px;
+				line-height: 20px;
+				margin: 20px 0 30px;
+			}
 		}
 	}
 }
@@ -159,5 +207,97 @@ body {
 	}
 }
 
+.pizza-carousel {	
+	&-item {
+		padding: 15px;
+	}
+
+	&-img {
+		background-image: url('../img/flour.jpg');
+		background-position: center;
+		font-family: "RobotoCondensed";
+		font-weight: bold;
+		color: #ffffff;
+		text-align: center;
+		padding: 0 0 30px;
+
+		img {
+			padding: 45px 45px 25px;
+		}
+
+		&-footer {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			margin-right: -15px;
+		}
+	}
+
+	&-circle {
+		box-sizing: content-box;		
+		font-size: 16.71px;
+		border: 5px solid $accent;
+		border-radius: 50%;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		
+		&.big {
+			font-size: 20.25px;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			margin: 0 26px 0 13px;
+		}
+	}
+
+	&-price {
+		background-color: $accent;
+		color: #ffffff;
+		font-size: 24px;
+		line-height: 45px;
+		width: 136px;
+		height: 45px;
+	}
+
+	.owl {
+		&-prev, &-next {
+			background-color: lighten($accent, 15%);
+			width: 50px;
+			height: 100px;
+			
+			.fa {
+				position: relative;
+				top: -1.5px;
+				line-height: 100px;
+			}	
+		}
+
+		&-next {
+			right: -100px;
+			border-top-left-radius: 100px;
+			border-bottom-left-radius: 100px;
+			
+			.fa {
+				left: 23px;							
+			}
+		}
+
+		&-prev {
+			text-align: right;
+			left: -100px;
+			border-top-right-radius: 100px;
+			border-bottom-right-radius: 100px;
+
+			.fa {
+				right: 23px;
+			}
+		}
+
+		&-dots {
+			padding-top: 50px;
+		}
+	}
+}
 
 @import "media"; // Всегда в конце

@@ -1,0 +1,15 @@
+@import "_mixins/font-face";
+
+@include font-face("Isadora", "../fonts/IsadoraBold/IsadoraBold", "bold");
+@include font-face("RobotoCondensed", "../fonts/RobotoCondensedBold/RobotoCondensedBold", "bold");
+@include font-face("NautilusPompilius", "../fonts/NautilusPompilius/NautilusPompilius");
+
+@include font-face("Raleway", "../fonts/Raleway/RalewayThin/RalewayThin", 100);
+@include font-face("Raleway", "../fonts/Raleway/RalewayExtraLight/RalewayExtraLight", 200);
+@include font-face("Raleway", "../fonts/Raleway/RalewayLight/RalewayLight", 300);
+@include font-face("Raleway", "../fonts/Raleway/RalewayRegular/RalewayRegular");
+@include font-face("Raleway", "../fonts/Raleway/RalewayMedium/RalewayMedium", 500);
+@include font-face("Raleway", "../fonts/Raleway/RalewaySemiBold/RalewaySemiBold", 600);
+@include font-face("Raleway", "../fonts/Raleway/RalewayBold/RalewayBold", bold);
+@include font-face("Raleway", "../fonts/Raleway/RalewayExtraBold/RalewayExtraBold", 800);
+@include font-face("Raleway", "../fonts/Raleway/RalewayBlack/RalewayBlack", 900);

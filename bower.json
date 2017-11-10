@@ -1,0 +1,30 @@
+{
+  "name": "pizza-design",
+  "description": "",
+  "authors": [
+    "Nurbol Sarsenbayev"
+  ],
+  "install": {
+    "path": "app/libs/", // указывается папка куда bower-installer перемещает файлы 
+    "sources": { // переопределяем значение свойства main bower.json файла пакета 
+      "bootstrap-grid": [
+        "bower_components/bootstrap-grid/dist/bootstrap-grid.min.css"
+      ],
+      "font-awesome": [
+        "bower_components/font-awesome/css/font-awesome.min.css"
+      ]
+    }
+  },
+  "license": "ISC",
+  "keywords": [
+    "gulp",
+    "верстка",
+    "sass"
+  ],
+  "homepage": "https://github.com/nurbol-sarsenbayev/start-template-gulp",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap-grid": "^3.3.6-beta.1",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}

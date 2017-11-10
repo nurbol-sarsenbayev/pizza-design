@@ -41,6 +41,11 @@ body {
 	font-size: 18px;
 }
 
+hr.accent {
+	border-color: $accent;
+	border-style: solid;
+}
+
 .section {
 	position: relative;
 	background-position: center center;

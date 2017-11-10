@@ -15,6 +15,14 @@ $(function() {
         smartSpeed: 500,
         navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">']
     });
+
+    $(".zakuski-carousel").owlCarousel({
+        items: 4,
+        nav: true,
+        margin: 30,
+        smartSpeed: 500,
+        navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">']
+    });
     
 });
     

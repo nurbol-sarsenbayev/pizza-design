@@ -5,12 +5,13 @@
 html, body {
 	height: 100%;
 	margin: 0;
+	background-color: #f4f4f4;
 }
 
 body {
 	min-width: 320px;
 	position: relative;
-	line-height: 1.75;
+	line-height: $default_line_height;
 	font-size: $default_font_size;
 	font-family: $default-font;
 	color: $default_text_color;

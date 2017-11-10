@@ -19,6 +19,34 @@ body {
 	opacity: 1;
 }
 
+.section {
+	position: relative;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;	
+	z-index: 1;
+
+	&-inverse {
+		color: #fff;
+	}
+
+	&-overlay {
+		position: relative;
+		&::before {
+			opacity: 0.8;
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;			
+		}
+
+		&.section-inverse::before {
+			background-color: rgb(0, 0, 0);				
+		}
+	}
+}
 
 
 @import "media"; // Всегда в конце

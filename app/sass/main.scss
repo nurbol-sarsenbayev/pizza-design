@@ -159,6 +159,17 @@ body {
 			}
 		}
 	}
+
+	&-napitki {
+		padding: 80px 0 25px;
+		.h2 {
+			margin: 0 0 30px;
+
+			& + p {
+				margin: 0 0 40px;
+			}
+		}
+	}
 }
 
 .main-carousel {
@@ -384,5 +395,61 @@ body {
 		}
 	}
 }
+
+.napitki-carousel {
+	text-align: center;
+
+	img.img-responsive {
+		width: auto !important;
+		height: 220px;
+		margin: 0 auto 45px;
+	}
+
+	&-title {
+		@extend .h3;
+		font-size: 15.42px;
+		line-height: 1;
+	}
+
+	&-price {
+		font-weight: 800;
+		line-height: 13.7px;
+		color: #999999;
+		margin: 15px 0 25px;
+	}
+
+	.owl {
+		&-prev, &-next {
+			@extend .owl-circle-nav;
+			background-color: $accent;
+			top: 35%;
+
+			&.disabled {
+				color: rgba(#000, 0.8);
+			}
+		}
+
+		&-dots {
+			display: none;
+		}
+
+		&-stage-outer {
+			padding-top: 100px;			
+			padding-bottom: 100px;
+		}
+
+		&-item {
+			transition: transform 0.5s ease-out;
+			&.active.scale {
+				transform: scale(1.167);
+
+				img {
+					transform: scale(1.097) translateY(-13px);
+				}
+			}
+		}
+	}
+}
+
 
 @import "media"; // Всегда в конце

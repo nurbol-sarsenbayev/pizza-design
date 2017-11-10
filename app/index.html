@@ -277,11 +277,114 @@
 		</section>
 
 		<section class="section section-dostavka section-inverse text-center" style="background-image: url('img/flour.jpg')">
-			
+			<a class="section-top-button" href="#"><i class="fa fa-angle-double-down"></i></a>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="h2">Доставка и оплата</h2>
+						<p>Не зависимо от того, какой сейчас час, какая погода и как далеко вы живете - наша оперативная доставка с радостью привезет вам заказ в любое время и по любому адресу г. Москвы.</p>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section class="section section-address">
-			
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-7">
+						<h2 class="h2">Адрес и время доставки</h2>
+						<p>Пожалуйста, выберите удобную дату и время доставки, введите ваш полный адрес и телефон, чтобы мы могли убедиться в том, что ваш заказ нашел вас:</p>			
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="input-block">
+									<label class="label">Дата доставки:</label>
+									<input required type="date" class="input">				
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="input-block">
+									<label class="label">Время доставки:</label>
+									<input required type="time" class="input">				
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="input-block">
+									<label class="label">Ваше имя:</label>
+									<input required type="text" class="input">
+								</div>		
+							</div>
+
+							<div class="col-sm-6">
+								<div class="input-block">
+									<label class="label">Ваш телефон:</label>
+									<input required type="tel" class="input" pattern="+7(\d){10}" placeholder="+7 (___) ____">		
+								</div>	
+							</div>
+						</div>
+
+						<div class="input-block">
+							<label class="label">Адрес доставки:</label>
+							<input required type="text" class="input">
+						</div>
+						<div class="input-block">
+							<label class="label">Комментарий к заказу:</label>
+							<textarea class="textarea" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+
+					<div class="col-sm-5">
+
+						<div class="zakaz">
+							<div class="zakaz-inner">
+								<div class="zakaz-title">
+									Ваш <span>заказ</span>
+								</div>
+								
+								<ul class="zakaz-list">
+									<li>
+										<div class="fa fa-times-circle"></div>
+										<p class="zakaz-item">Пицца "Пепперони"</p>
+										<span class="zakaz-dots"></span><span class="zakaz-price">1 шт. / <b>1330</b> руб.</span>
+									</li>
+									<li>
+										<div class="fa fa-times-circle"></div>
+										<p class="zakaz-item">Пицца "Французская"</p>
+										<span class="zakaz-dots"></span><span class="zakaz-price">1 шт. / <b>1630</b> руб.</span>
+									</li>
+									<li>
+										<div class="fa fa-times-circle"></div>
+										<p class="zakaz-item">Салат "Корейская морковь"</p>
+										<span class="zakaz-dots"></span><span class="zakaz-price">300 гр. / <b>568</b> руб.</span>
+									</li>
+									<li>
+										<div class="fa fa-times-circle"></div>
+										<p class="zakaz-item">Напиток "Кока-Кола"</p>
+										<span class="zakaz-dots"></span><span class="zakaz-price">2 бут. / <b>150</b> руб.</span>
+									</li>
+								</ul>
+
+								<div class="zakaz-itogo">
+									Итого: <span>21 450 руб.</span>
+								</div>
+
+								<div class="zakaz-buttons">
+									<button class="button-cancel">
+										<i class="fa fa-times"></i> <span>Сбросить</span>
+									</button>
+									<button class="button">
+										<i class="fa fa-check"></i> Оформить
+									</button>
+								</div>
+							</div>
+						</div>	
+
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<footer class="section section-footer section-inverse" style="background-image: url('./img/flour.jpg')">

@@ -175,6 +175,95 @@ hr.accent {
 			}
 		}
 	}
+
+	&-dostavka {
+		padding: 90px 65px;
+		.h2 {
+			margin: 0 0 30px;
+		}
+		p {
+			margin: 0;
+		}
+	}
+
+	&-address {
+		padding: 80px 0 90px;
+
+		.h2 {
+			text-align: left;
+		}
+
+		.zakaz {
+			background-color: #262626;
+			padding: 26px;
+			color: #ffffff;
+			text-align: center;
+
+			&-inner {
+				border: 1px solid #515151;
+				padding: 50px 24px 45px;
+			}
+
+			&-title {
+				font-weight: 900;
+				font-size: 30.57px;
+				margin-bottom: 40px;
+				text-transform: uppercase;
+
+				span {
+					color: $accent;
+				}
+			}
+
+			&-list {
+				padding: 0 0 20px;
+				margin: 0 0 50px;
+				list-style: none;
+				font-size: 15px;
+				line-height: 26px;	
+				border-bottom: 1px solid #515151;			
+				text-align: left;
+
+				li {
+					display: flex;
+					align-items: center;
+					margin-bottom: 10px;
+
+					.fa {
+						color: #b12a2a;
+						margin-right: 10px;
+					}
+				}
+			}
+
+			&-item {
+				margin: 0;
+				white-space: nowrap;
+			}
+
+			&-dots {
+				flex-grow: 1;
+				height: 26px;
+				overflow: hidden;
+			 
+				&:after {
+					content:".......................................................................";
+					letter-spacing: 1.5px;
+				}
+
+			}
+
+			&-price {
+				white-space: nowrap;
+			}
+
+			&-itogo {
+				@extend .zakaz-title;
+				font-size: 24px;	
+				margin-bottom: 50px;			
+			}
+		}
+	}
 }
 
 .main-carousel {

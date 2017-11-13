@@ -4,13 +4,92 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	.logo {
+		margin-right: 30px;
+	}
 
+	.menu-header li {
+		margin-right: 20px;		
+	}
+
+	.main-carousel {
+		.owl {
+			&-next {
+				right: -95px;
+			}
+
+			&-prev {
+				left: -95px;
+			}
+		}
+	}
+
+	.pizza-carousel {
+		.owl {
+			&-next {
+				right: -84px;
+			}
+
+			&-prev {
+				left: -83px;
+			}
+		}
+	}
 }
 	/**/
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.logo {
+		flex-grow: 1;
+	}
+
+
+	.menu-header {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: rgba(#000, 0.349);
+		z-index: 11;
+
+		li {
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+
+	.main-carousel {
+		&-composition {
+			.h1 {
+				font-size: 35px;
+			}
+		}
+
+		.owl {
+			&-next {
+				right: -76px;
+			}
+
+			&-prev {
+				left: -76px;
+			}
+		}
+	}
+
+	.pizza-carousel {
+		.owl {
+			&-next {
+				right: -65px;
+			}
+
+			&-prev {
+				left: -64px;
+			}
+		}
+	}
 
 }
 	/**/
@@ -19,22 +98,170 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
+	.main-carousel {
+		padding: 0 60px;
+		&-composition {
+			.h1 {
+				font-size: 30px;
+			}
+		}
+
+		.owl {
+			&-next {
+				right: 0;
+			}
+
+			&-prev {
+				left: 0;
+			}
+		}
+	}
+
+	.pizza-carousel {
+		&-img {
+			max-width: 360px;
+			margin: 0 auto;
+		}
+		.owl {
+			&-next {
+				right: -10.6%;
+			}
+
+			&-prev {
+				left: -10.6%;
+			}
+		}
+
+		.button {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	.napitki-carousel {
+		padding: 0 60px;
+
+		.button {
+			width: 100%;
+			padding: 0;
+		}
+
+		.owl {
+			&-stage-outer {
+				padding-top: 0;
+				padding-bottom: 50px;
+			}
+
+			&-item.active.scale {
+				transform: none;
+				img {
+					transform: none;
+				}
+			}
+
+			&-prev {
+				left: 0;
+			}
+
+			&-next {
+				right: 0;
+			}
+		}
+	}
+}
+	/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 650px) {
+	
+	.section-main {
+		padding-bottom: 170px;
+	}
+
+	.main-carousel {
+		&-item {
+			text-align: center;
+			display: block;
+		}
+
+		&-img {
+			padding-left: 0px;
+			&:before {
+				left: -150px;
+			}
+		}
+	}
 }
 	/**/
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.section {
+		&-pizza {
+			.col-xs-offset-1 {
+				margin-left: 0;
+			}
 
+			.col-xs-10 {
+				width: 100%;
+			}
+		}
+
+		&-address {
+			.zakaz {
+				padding: 0;
+
+				&-list {
+					margin-bottom: 30px;
+					li {
+						flex-wrap: wrap;					
+					}
+				}
+
+				&-item {
+					flex-grow: 1;
+				}
+
+				&-itogo {
+					margin-bottom: 30px;
+				}
+
+				&-dots {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.pizza-carousel {
+		&-img {
+			max-width: 360px;
+			margin: 0 auto;
+		}
+
+		&-circle.big {
+			margin: 0 5px;
+		}
+		.owl {
+			&-next, &-prev {
+				display: none;
+			}
+		}
+	}
+
+	.zakuski-carousel {
+		padding: 0;
+
+		.owl {
+			&-prev, &-next {
+				display: none;
+			}
+		}
+	}
 }
 	/**/
 
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
-}
-	/**/
 
 
 /*==========  Mobile First  ==========*/

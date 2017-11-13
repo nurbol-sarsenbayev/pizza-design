@@ -13,6 +13,11 @@ $(function() {
         loop: true,
         margin: 1,
         smartSpeed: 500,
+        responsive: {
+            0: { items: 1 },
+            769: { items: 2 },
+            993: { items: 3 }
+        },
         navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">']
     });
 
@@ -21,6 +26,12 @@ $(function() {
         nav: true,
         margin: 30,
         smartSpeed: 500,
+        responsive: {
+            0: { items: 1 },
+            769: { items: 2 },
+            993: { items: 3 },
+            1201: { items: 4 }            
+        },
         navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">']
     });
 
@@ -29,6 +40,11 @@ $(function() {
         nav: true,
         margin: 30,
         smartSpeed: 500,
+        responsive: {
+            0: { items: 1 },
+            481: { items: 2 },
+            769: { items: 3 }            
+        },
         navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">'],        
         onChanged: function(e) {
             setTimeout(function() {

@@ -51,6 +51,65 @@ hr.accent {
 	border-style: solid;
 }
 
+.page-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(#000, 0.349);
+	z-index: 10;
+
+	&-flex {
+		display: flex;
+		align-items: center;
+		height: 120px;
+	}
+}
+
+.logo {
+	color: $accent;
+	text-decoration: none;
+	display: flex;
+	
+	img {
+		width: 50px;
+		height: 50px;
+	}
+
+	&-text {		
+		font-family: "NautilusPompilius";
+		font-size: 25px;
+		line-height: 1;
+		margin-left: 8px;
+		-moz-transform: matrix( 1,-0.13485275891962,0,1,0,0);
+		-webkit-transform: matrix( 1,-0.13485275891962,0,1,0,0);
+		-ms-transform: matrix( 1,-0.13485275891962,0,1,0,0);
+		span {
+			display: block;
+			color: #ffffff;
+		}
+	}
+}
+
+.phone {
+	&-text {
+		font-size: 12px;
+		color: rgba(#fff, 0.35);
+	}
+
+	&-number {
+		font-family: RobotoCondensed;
+		font-weight: bold;
+		font-size: 24px;
+		span {
+			font-size: 16px;
+		}
+		.fa {
+			color: $accent;
+		}
+	}
+}
+
 .section {
 	position: relative;
 	background-position: center center;
@@ -279,8 +338,6 @@ hr.accent {
 		.footer-gallery {
 			line-height: 0;
 			font-size: 0;
-			// display: flex;
-			// flex-wrap: wrap;
 
 			img {
 				margin: 0 8px 11px 0;
@@ -289,8 +346,6 @@ hr.accent {
 				&:nth-child(4n) {
 					margin-right: 0;
 				}
-
-//				display: block;				
 			}
 		}
 	}
@@ -575,6 +630,57 @@ hr.accent {
 	}
 }
 
+.menu {
+	list-style: none;
+	padding: 0;
+	li {		
+		a {
+			display: flex;
+			align-items: center;
+			text-transform: uppercase;
+			color: #ffffff;
+			font-size: 12px;
+			display: inline-block;
+			font-weight: bold;
+
+			&:before {
+				content: "\f105";
+				display: inline-block;
+				font-family: fontawesome;
+				font-size: 16px;
+				@include circle(20px);
+				color: rgba(#fff, 0.349);
+				margin-right: 7px;
+				text-decoration: none;
+				padding-left: 2px;
+			}		
+
+			&:hover {
+				color: $accent;
+				text-decoration: none;
+
+				&:before {
+					background-color: #94774a;	
+					color: #1a1208;							
+				}
+			}
+		}		
+	}	
+
+	&-header {
+		li {
+			display: inline-block;
+			margin-right: 40px;
+		}
+	}
+
+	&-footer {
+		li {
+			margin-bottom: 10px;
+		}
+	}
+}
+
 .list {
 	padding: 0;
 	list-style: none;
@@ -599,58 +705,20 @@ hr.accent {
 		}
 	}
 
-	&-zakazat, &-socials {
+	&-socials {
 		font-size: 12px;
 		text-transform: uppercase;
 		font-weight: bold;
-			
-		li {
-			span {
-				border-bottom: 1px solid #fff;
-			}
-		}
-	}
 
-	&-zakazat {
-		li {
-			padding-left: 27px;			
-			a {
-				color: #ffffff;
-			}
-
-			&:before {
-				position: absolute;
-				top: 4px;
-				left: 0px;
-				content: "\f105";
-				font-family: fontawesome;
-				padding-left: 2px;
-				@include circle(20px);
-				color: rgba(#fff, 0.349);
-			}
-
-			&:hover{
-				a {
-					color: $accent;
-				}
-
-				&:before {
-					background-color: #94774a;	
-					color: #1a1208;			
-				}
-			}
-
-
-		}		
-	}
-
-	&-socials {
 		li {
 			padding-left: 34px;			
 			.fa {
 				@include circle(27px);
 				background-color: #94774a;				
 				font-size: 16px;
+			}
+			span {
+				border-bottom: 1px solid #fff;
 			}
 		}
 	}

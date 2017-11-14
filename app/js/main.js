@@ -57,5 +57,21 @@ $(function() {
         }
     });
 
+    var $wnd = $(window);
+    var $top = $(".page-top");
+    var $html = $("html, body");
+
+    $wnd.scroll(function() {
+        if($wnd.scrollTop() > $wnd.height()) {
+            $top.addClass('active');
+        } else {
+            $top.removeClass('active');
+        }
+    });
+
+    $top.click(function() {
+        $html.stop().animate({ scrollTop: 0 }, 'slow', 'swing');
+    });
+
 });
     

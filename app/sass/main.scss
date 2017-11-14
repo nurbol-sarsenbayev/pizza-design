@@ -51,6 +51,28 @@ hr.accent {
 	border-style: solid;
 }
 
+.page-top {
+	position: fixed;
+	bottom: 20px;
+	right: -100px;
+	z-index: 99;
+	cursor: pointer;
+	@include circle(50px);
+	background-color: $accent;
+	font-size: 25px;
+	color: #ffffff;
+	opacity: .3;
+	transition: all .5s ease-out;	
+
+	&.active {		
+		right: 20px;			
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
 .page-header {
 	position: absolute;
 	top: 0;
@@ -155,6 +177,7 @@ hr.accent {
 .phone {
 	&-text {
 		font-size: 12px;
+		line-height: 1;
 		color: rgba(#fff, 0.35);
 	}
 

@@ -118,3 +118,10 @@ body textarea:required:valid {
 	text-align: center;
 	border-radius: 50%;
 }
+
+a {
+	color: $default_text_color;
+	.section-inverse & {
+		color: #fff;
+	}
+}

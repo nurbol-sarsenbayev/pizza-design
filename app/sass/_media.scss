@@ -8,6 +8,27 @@
 		margin-right: 30px;
 	}
 
+	.section {
+		&-footer {
+			.button {
+				padding: 0;
+				width: 100%;
+			}
+
+			.footer-gallery {	
+				img {	
+					&:nth-child(3n) {
+						margin-right: 0;
+					}
+
+					&:nth-child(4n) {
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+	}
+
 	.menu-header li {
 		margin-right: 20px;		
 	}
@@ -45,6 +66,17 @@
 		flex-grow: 1;
 	}
 
+	.section {
+		&-footer {
+			.footer-gallery {	
+				img {	
+					&:nth-child(3n) {
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+	}
 
 	.menu-header {
 		display: none;
@@ -97,6 +129,37 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+	.section {
+		&-footer {
+			.h4	{
+				margin-bottom: 15px;
+			}
+
+			p {
+				margin: 0 0 3px 0;
+			}
+
+			.list {
+				margin: 0;
+				li {
+					margin: 0 0 5px 0;
+				}
+			}
+
+			.menu-footer {
+				margin-bottom: 10px;
+				li {
+					margin: 0 0 3px 0;
+				}
+			}
+
+			.button {
+				padding: 0 40px;
+				width: auto;
+			}
+		}
+	}
 
 	.main-carousel {
 		padding: 0 60px;

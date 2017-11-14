@@ -51,6 +51,25 @@ hr.accent {
 	border-style: solid;
 }
 
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #222;
+	z-index: 100;
+
+	.fa {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -38px;
+		margin-left: -38px;
+		color: #ffffff;
+	}
+}
+
 .page-top {
 	position: fixed;
 	bottom: 20px;
@@ -84,6 +103,7 @@ hr.accent {
 	&-flex {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 		padding: 27px 0;
 	}
 }
@@ -192,6 +212,10 @@ hr.accent {
 			color: $accent;
 		}
 	}
+}
+
+.hamburger {
+	margin-left: 15px;
 }
 
 .section {

@@ -12,6 +12,9 @@
       ],
       "font-awesome": [
         "bower_components/font-awesome/css/font-awesome.min.css"
+      ],
+      "css-hamburgers": [
+        "bower_components/css-hamburgers/dist/hamburgers.min.css"
       ]
     }
   },
@@ -25,6 +28,8 @@
     "jquery": "^3.2.1",
     "bootstrap-grid": "^3.3.6-beta.1",
     "font-awesome": "fontawesome#^4.7.0",
-    "owl.carousel": "owl-carousel2#^2.2.1"
-  }
+    "owl.carousel": "owl-carousel2#^2.2.1",
+    "css-hamburgers": "^0.9.1"
+  },
+  "devDependencies": {}
 }

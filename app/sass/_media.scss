@@ -81,10 +81,11 @@
 	.menu-header {
 		display: none;
 		position: absolute;
+		padding-left: 15px;
 		top: 100%;
 		left: 0;
 		right: 0;
-		background-color: rgba(#000, 0.349);
+		background-color: rgba(#000, 0.7);
 		z-index: 11;
 
 		li {
@@ -266,6 +267,17 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.hamburger {
+		order: 1;		
+	}
+
+	.phone-block {
+		width: 100%;
+		margin-top: 20px;
+		order: 2;
+		text-align: center;
+	}
+
 	.section {
 		&-pizza {
 			.col-xs-offset-1 {

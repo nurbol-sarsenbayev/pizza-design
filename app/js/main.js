@@ -60,6 +60,8 @@ $(function() {
     var $wnd = $(window);
     var $top = $(".page-top");
     var $html = $("html, body");
+    var $headerMenu = $(".menu-header");
+    var $loader = $(".preloader");
 
     $wnd.scroll(function() {
         if($wnd.scrollTop() > $wnd.height()) {
@@ -71,6 +73,20 @@ $(function() {
 
     $top.click(function() {
         $html.stop().animate({ scrollTop: 0 }, 'slow', 'swing');
+    });
+
+    $wnd.on('load', function() {
+        $loader.delay(100).fadeOut('slow');
+    });
+
+    $(".hamburger").click(function() {
+        $this = $(this);
+        $this.toggleClass("is-active");
+        if($this.hasClass("is-active")) {
+            $headerMenu.slideDown();
+        } else {
+            $headerMenu.slideUp();
+        }
     });
 
 });

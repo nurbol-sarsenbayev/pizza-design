@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Учебный лендинг сайт для продажи Пиццы",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "@types/jquery": "^3.2.16"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",

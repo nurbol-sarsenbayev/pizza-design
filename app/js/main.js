@@ -1,3 +1,5 @@
+/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
+
 $(function() {
 
     $(".main-carousel").owlCarousel({
@@ -76,7 +78,7 @@ $(function() {
     });
 
     $wnd.on('load', function() {
-        $loader.delay(100).fadeOut('slow');
+        $loader.delay(0).fadeOut('slow');
     });
 
     $(".hamburger").click(function() {
@@ -86,6 +88,15 @@ $(function() {
             $headerMenu.slideDown();
         } else {
             $headerMenu.slideUp();
+        }
+    });    
+
+    $(".section-top-button, .link").click(function(e) {
+        e.preventDefault();
+        var $href = $(this).attr('href');
+        if($href.length > 0) {
+            var top = $href.length == 1 ? 0 : $($href).offset().top;
+            $html.stop().animate({ scrollTop: top }, "slow", "swing");
         }
     });
 

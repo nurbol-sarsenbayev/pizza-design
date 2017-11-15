@@ -93,11 +93,11 @@ hr.accent {
 }
 
 .page-header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(#000, 0.349);
+	background-color: rgba(#000, 0.7);
 	z-index: 10;
 
 	&-flex {

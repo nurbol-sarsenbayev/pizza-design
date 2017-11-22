@@ -15,7 +15,7 @@ body {
 	font-size: $default_font_size;
 	font-family: $default-font;
 	color: $default_text_color;
-	overflow-x: hidden;
+	overflow-x: auto;
 	opacity: 1;
 }
 
@@ -301,7 +301,8 @@ hr.accent {
 		
 		.container {
 			background-color: #ffffff;
-			padding: 80px 0 55px 0;
+			padding-top: 80px;
+			padding-bottom: 55px;
 		}
 
 		.h2 {
@@ -590,7 +591,7 @@ hr.accent {
 		}
 
 		&-next {
-			right: -100px;
+			right: -113px;
 			border-top-left-radius: 100px;
 			border-bottom-left-radius: 100px;
 			
@@ -601,7 +602,7 @@ hr.accent {
 
 		&-prev {
 			text-align: right;
-			left: -100px;
+			left: -112px;
 			border-top-right-radius: 100px;
 			border-bottom-right-radius: 100px;
 

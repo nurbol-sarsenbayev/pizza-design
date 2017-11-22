@@ -89,6 +89,7 @@ $(function() {
         } else {
             $headerMenu.slideUp();
         }
+        return false;
     });    
 
     $(".section-top-button, .link").click(function(e) {
